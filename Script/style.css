@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+body{
+    background: #f4f4f4;
+    color: #555;
+    line-height: 1.6em;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background: #555;
+    color: #000000;
+    min-height: 100px;
+    border-bottom: 5px brown solid;
+}
+
+#main-heading{
+    float: left;
+    margin-top: 40px;
+}
+
+#highlight{
+    color: brown;
+}
+
+nav{
+    float: right;
+    margin-top: 40px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 10px;
+    font-size:1.6em;
+}
+
+nav ul li a:hover{
+    color:brown;
+}
+
+#showcase{
+    text-align: center;
+    background: url('../image/showcase.jpg') 0;
+    min-height: 200px;
+}
+
+#showcase h1{
+    margin-top: 50px;
+    font-size: 3em;
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+#showcase p{
+    margin-top: 30px;
+    color: #f4f4f4;
+    font-size:1.6em;
+}
+
+#newsletter{
+    background: #555;
+    color: #f4f4f4;
+    min-height: 60px;
+}
+
+#newsletter h1{
+    float: left;
+    margin-top: 25px;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 25px;
+}
+
+#newsletter form input[type='search']{
+    border: 2px brown solid;
+}
+
+#newsletter form input[type='button']{
+    background: brown;
+    border: none;
+    padding: 0 10px;
+}
+
+#boxes{
+    margin-top: 30px;
+    line-height: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;  
+}
+
+#boxes .box img{
+    width: 80px;
+    height: 80px;
+}
+
+@media(max-width:760px){
+    header #main-heading,header nav,#newsletter h1,#newsletter form,#boxes .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    } 
+    header nav, #newsletter form{
+        margin-bottom: 20px;
+    }
+    #showcase h1{
+        font-size:2em;  
+    }
+
+    #showcase{
+        background: url('../image/showcase.jpg');
+        background-size: 700px;
+    }
+}
+
+footer{
+    background: brown;
+    color: #000000;
+    text-align: center;
+    font-size: 2em;
+    margin-top:50px;
+    min-height: 60px;
+}
+
+footer p{
+    padding:30px;
+}
